@@ -1,0 +1,33 @@
+<div class="panel">
+
+	<div class="left-panel">
+		<div class="left-content">
+			<img src="../assets/images/delivery.png" alt="Доставка">
+			<!-- <img src="../src/assets/images/delivery.png" alt="Доставка"> -->
+		</div>
+	</div>
+	<div class="right-panel">
+		<div class="right-content">
+			<h2>Рассчитать доставку</h2>
+			<div class="deliveryDiv">
+				<form id="deliveryForm">
+					<label for="fromCity">Город отправки:</label>
+					<input type="text" id="fromCity" name="fromCity" required>
+				</form>
+				<form id="deliveryForm">
+					<label for="toCity">Город назначения:</label>
+					<input type="text" id="toCity" name="toCity" required>
+				</form>
+
+				<form id="deliveryForm">
+
+					<label for="packageSize">Размер посылки:</label>
+					<input type="text" id="packageSize" name="packageSize" required>
+				</form>
+
+				<button class="btn-356" type="button" onclick="calculateDelivery()">Рассчитать</button>
+			</div>
+		</div>
+	</div>
+
+</div>

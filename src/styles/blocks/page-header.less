@@ -1,0 +1,82 @@
+.page-header {
+
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	padding: 10px 50px;
+	/* Примерные значения, можете настроить под свои требования */
+
+	img {
+		margin-right: auto;
+		/* Лого будет выровнено в начале */
+
+	}
+
+	nav {
+		flex: 1;
+		/* Настроил для nav flex-grow, чтобы он занимал доступное пространство */
+
+	}
+
+	ul {
+		display: flex;
+		justify-content: center;
+		/* Это выровняет "Профиль" и "История" по центру */
+
+		margin-left: 150px;
+	}
+
+	li {
+		margin: 0 10px;
+	}
+
+	a {
+		text-decoration: none;
+		color: black;
+
+	}
+
+	a:hover {
+		color: red;
+		transition: 0.2s;
+	}
+
+
+	li:nth-child(3) {
+		margin-left: auto;
+		/* Это выровняет "Войти/Выйти" справа внутри flex-контейнера */
+
+	}
+
+
+
+	li::before {
+		content: '';
+		/* Замените путь на фактический путь к вашей иконке */
+		width: 20px;
+		/* Укажите желаемую ширину иконки */
+		height: 20px;
+		/* Укажите желаемую высоту иконки */
+		display: inline-block;
+		margin-right: 5px;
+		/* Укажите отступ между иконкой и текстом, если необходимо */
+		vertical-align: middle;
+		/* Выравнивание иконок по центру текста */
+
+	}
+
+	li:nth-child(1)::before {
+		background-image: url('../assets/icons/User.svg');
+
+	}
+
+	li:nth-child(2)::before {
+		background-image: url('../assets/icons/Time.svg');
+
+	}
+
+	li:nth-child(3)::before {
+		background-image: url('../assets/icons/Exit.svg');
+
+	}
+}

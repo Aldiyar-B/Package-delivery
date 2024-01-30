@@ -1,0 +1,225 @@
+header {
+  background-color: white;
+  color: black;
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+h2 {
+  /* Title/H2 */
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 32px;
+  /* 133.333% */
+}
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+nav ul li {
+  display: inline;
+  margin-right: 10px;
+}
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: 20px;
+}
+form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+label {
+  color: #344051;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+  /* 142.857% */
+}
+input {
+  width: 100%;
+  height: 40px;
+  border-radius: 8px;
+  border: 1px solid #ced2da;
+}
+.width_623 {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+  max-width: 624px;
+}
+.is-hidden {
+  position: absolute !important;
+  width: 0 !important;
+  height: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  border: 0 !important;
+  visibility: hidden !important;
+  pointer-events: none;
+  overflow: hidden !important;
+  white-space: nowrap !important;
+}
+.body {
+  font-family: "Inter", sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #020024;
+  background: -webkit-gradient(linear, left top, right top, from(#020024), color-stop(97%, #327179));
+  background: linear-gradient(90deg, #020024 0%, #327179 97%);
+}
+button {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 16px 32px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: none;
+  -ms-flex-item-align: stretch;
+      align-self: stretch;
+  border-radius: var(--Radius-btn, 32px);
+  background: var(--BG-Brand, #1975ff);
+  color: white;
+  font-family: "Inter", sans-serif;
+  /* Button/Semibold */
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  /* 150% */
+}
+button:hover {
+  background-color: #0052cc;
+}
+.btn-356 {
+  max-width: 356px;
+}
+.panel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 113px;
+}
+.left-panel {
+  width: 50%;
+}
+.left-panel img {
+  max-width: 100%;
+  height: auto;
+  margin-top: -150px;
+}
+.right-panel {
+  width: 50%;
+  height: 494px;
+}
+.right-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 356px;
+  padding: 32px 72px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  gap: 24px;
+  border-radius: var(--Card-radius, 24px);
+  background: var(--BG-Primary, #fff);
+}
+.deliveryDiv {
+  width: 100%;
+}
+#deliveryForm {
+  margin-bottom: 24px;
+}
+#deliveryForm label {
+  margin-bottom: 6px;
+}
+.page-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding: 10px 50px;
+  /* Примерные значения, можете настроить под свои требования */
+}
+.page-header img {
+  margin-right: auto;
+  /* Лого будет выровнено в начале */
+}
+.page-header nav {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  /* Настроил для nav flex-grow, чтобы он занимал доступное пространство */
+}
+.page-header ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  /* Это выровняет "Профиль" и "История" по центру */
+  margin-left: 150px;
+}
+.page-header li {
+  margin: 0 10px;
+}
+.page-header a {
+  text-decoration: none;
+  color: black;
+}
+.page-header a:hover {
+  color: red;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+.page-header li:nth-child(3) {
+  margin-left: auto;
+  /* Это выровняет "Войти/Выйти" справа внутри flex-контейнера */
+}
+.page-header li::before {
+  content: '';
+  /* Замените путь на фактический путь к вашей иконке */
+  width: 20px;
+  /* Укажите желаемую ширину иконки */
+  height: 20px;
+  /* Укажите желаемую высоту иконки */
+  display: inline-block;
+  margin-right: 5px;
+  /* Укажите отступ между иконкой и текстом, если необходимо */
+  vertical-align: middle;
+  /* Выравнивание иконок по центру текста */
+}
+.page-header li:nth-child(1)::before {
+  background-image: url('../assets/icons/User.svg');
+}
+.page-header li:nth-child(2)::before {
+  background-image: url('../assets/icons/Time.svg');
+}
+.page-header li:nth-child(3)::before {
+  background-image: url('../assets/icons/Exit.svg');
+}
