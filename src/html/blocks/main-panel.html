@@ -10,12 +10,12 @@
 		<div class="right-content">
 			<h2>Рассчитать доставку</h2>
 			<div class="deliveryDiv">
-				<form id="fromCityForm">
+				<form id="senderForm">
 					<label for="fromCity">Город отправки:</label>
 					<select id="fromCity" name="fromCity"></select>
 				</form>
 
-				<form id="toCityForm">
+				<form id="receiverForm">
 					<label for="toCity">Город назначения:</label>
 					<select id="toCity" name="toCity"></select>
 				</form>
@@ -26,8 +26,10 @@
 				</form>
 
 
+
 				<button class="btn-356" type="button" onclick="calculateDelivery()">Рассчитать</button>
 
+				<div id="resultContainer" class="resultContainer"></div>
 			</div>
 		</div>
 	</div>
