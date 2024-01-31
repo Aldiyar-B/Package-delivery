@@ -54,6 +54,20 @@ input {
   border-radius: 8px;
   border: 1px solid #ced2da;
 }
+select {
+  padding: 8px;
+  font-size: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+select:focus {
+  outline: none;
+  border-color: #4d90fe;
+  /* Измените цвет границы при фокусе, если нужно */
+  -webkit-box-shadow: 0 0 5px rgba(77, 144, 254, 0.5);
+          box-shadow: 0 0 5px rgba(77, 144, 254, 0.5);
+  /* Измените тень при фокусе, если нужно */
+}
 .width_623 {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -146,10 +160,13 @@ button:hover {
 .deliveryDiv {
   width: 100%;
 }
-#deliveryForm {
+.deliveryDiv {
   margin-bottom: 24px;
 }
-#deliveryForm label {
+.deliveryDiv label {
+  margin-bottom: 6px;
+}
+.deliveryDiv select {
   margin-bottom: 6px;
 }
 .page-header {

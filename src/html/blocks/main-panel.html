@@ -10,22 +10,24 @@
 		<div class="right-content">
 			<h2>Рассчитать доставку</h2>
 			<div class="deliveryDiv">
-				<form id="deliveryForm">
+				<form id="fromCityForm">
 					<label for="fromCity">Город отправки:</label>
-					<input type="text" id="fromCity" name="fromCity" required>
+					<select id="fromCity" name="fromCity"></select>
 				</form>
-				<form id="deliveryForm">
+
+				<form id="toCityForm">
 					<label for="toCity">Город назначения:</label>
-					<input type="text" id="toCity" name="toCity" required>
+					<select id="toCity" name="toCity"></select>
 				</form>
 
-				<form id="deliveryForm">
-
+				<form id="packageSizeForm">
 					<label for="packageSize">Размер посылки:</label>
-					<input type="text" id="packageSize" name="packageSize" required>
+					<select id="packageSize" name="packageSize" required></select>
 				</form>
+
 
 				<button class="btn-356" type="button" onclick="calculateDelivery()">Рассчитать</button>
+
 			</div>
 		</div>
 	</div>

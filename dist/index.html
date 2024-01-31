@@ -54,22 +54,24 @@
         <div class="right-content">
           <h2>Рассчитать доставку</h2>
           <div class="deliveryDiv">
-            <form id="deliveryForm">
+            <form id="fromCityForm">
               <label for="fromCity">Город отправки:</label>
-              <input type="text" id="fromCity" name="fromCity" required>
+              <select id="fromCity" name="fromCity"></select>
             </form>
-            <form id="deliveryForm">
+
+            <form id="toCityForm">
               <label for="toCity">Город назначения:</label>
-              <input type="text" id="toCity" name="toCity" required>
+              <select id="toCity" name="toCity"></select>
             </form>
 
-            <form id="deliveryForm">
-
+            <form id="packageSizeForm">
               <label for="packageSize">Размер посылки:</label>
-              <input type="text" id="packageSize" name="packageSize" required>
+              <select id="packageSize" name="packageSize" required></select>
             </form>
+
 
             <button class="btn-356" type="button" onclick="calculateDelivery()">Рассчитать</button>
+
           </div>
         </div>
       </div>
@@ -79,40 +81,17 @@
     </div>
   </main>
   <footer class="page-footer">
-    <!-- <div class="page-footer__container">
-		<div class="page-footer__border"></div>
-		<div class="page-footer__wrapper">
-			<nav class="page-footer__nav">
-				<a href="#" class="page-footer__nav-link">Календарь мероприятий</a>
-				<a href="#" class="page-footer__nav-link">Провести мероприятие</a>
-				<a href="#" class="page-footer__nav-link">Стать арендатором</a>
-				<a href="#" class="page-footer__nav-link">Наши проекты</a>
-				<a href="#" class="page-footer__nav-link">Контакты</a>
-			</nav>
-			<form class="page-footer__form subscribe">
-				<h4 class="subscribe__title	">
-					Подпишись и будь в курсе происходящего
-				</h4>
-				<div class="subscribe__wrapper">
-					<input type="email" name="email" placeholder="Email" class="subscribe__input" required>
-					<button class="subscribe__sumbit" type="submit">Подписаться</button>
-				</div>
-				<label class="subscribe__check check">
 
-					<input type="checkbox" class="check__input" required name="agree">
-					<span class="check__mark"></span>
-					<span class="check__label">Согласен на обработку персональных данных</span>
-				</label>
-			</form>
-		</div>
-	</div> -->
 
 
   </footer>
 
 
 
-  <script src="../js/index.js"></script>
+  <p>test</p>
+
+  <script src="/scripts/main.js"></script>
+
 </body>
 
 </html>
